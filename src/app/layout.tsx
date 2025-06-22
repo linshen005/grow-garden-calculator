@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script"; // ⬅️ 加入 Script 支持
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Navigation from "@/components/Navigation";
@@ -21,6 +22,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ 插入 Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-J8VT3G13GR"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-J8VT3G13GR');
+            `,
+          }}
+        />
+      </head>
       <body suppressHydrationWarning className="antialiased">
         <ClientBody>
           <Navigation />
