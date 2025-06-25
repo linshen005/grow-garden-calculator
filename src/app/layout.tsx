@@ -25,10 +25,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* ✅ 插入 Google Analytics */}
+        {/* biome-ignore lint/security/noDangerouslySetInnerHtml */}
         <Script
-          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-J8VT3G13GR"
+          strategy="afterInteractive"
         />
+        {/* biome-ignore lint/security/noDangerouslySetInnerHtml */}
         <Script
           id="gtag-init"
           strategy="afterInteractive"
