@@ -3,6 +3,7 @@ import Script from "next/script"; // ⬅️ 加入 Script 支持
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Navigation from "@/components/Navigation";
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "Grow A Garden Calculator | Roblox Crop Value Calculator",
@@ -47,6 +48,7 @@ export default function RootLayout({
           <main className="container mx-auto px-4 pb-8">
             {children}
           </main>
+          <Footer />
         </ClientBody>
       </body>
     </html>
