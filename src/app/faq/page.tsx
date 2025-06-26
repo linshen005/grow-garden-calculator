@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 const faqs = [
   {
@@ -62,7 +62,7 @@ export default function FAQPage() {
       <h1 className="text-4xl font-bold gradient-text mb-8">Frequently Asked Questions</h1>
       <div className="space-y-8">
         {faqs.map((faq, i) => (
-          <div key={i} className="glass-card rounded-2xl p-6 shadow-lg">
+          <div key={faq.q} className="glass-card rounded-2xl p-6 shadow-lg">
             <h3 className="font-semibold text-lg mb-2 text-blue-700">{faq.q}</h3>
             <p className="text-gray-700 text-base">{faq.a}</p>
           </div>

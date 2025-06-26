@@ -1,9 +1,9 @@
 // Footer.tsx - Modern glass-card footer with logo, nav, copyright, dark/light mode
 'use client';
-import { FC } from 'react';
+import type { FC } from 'react';
 
 const links = [
-  { href: '/mutation-ranking', label: 'Mutations' },
+  // { href: '/mutation-ranking', label: 'Mutations' }, // 已移除
   { href: '/value-ranking', label: 'Crops' },
   { href: '/pets', label: 'Pets' },
   { href: '/gears', label: 'Gears' },

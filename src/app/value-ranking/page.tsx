@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -44,11 +43,12 @@ export default function ValueRankingPage() {
           aValue = a.baseValue;
           bValue = b.baseValue;
           break;
-        case 'rarity':
+        case 'rarity': {
           const rarityOrder = { common: 1, uncommon: 2, rare: 3, epic: 4, legendary: 5 };
           aValue = rarityOrder[a.rarity];
           bValue = rarityOrder[b.rarity];
           break;
+        }
         default:
           return 0;
       }

@@ -20,7 +20,7 @@ export default function TopCombosPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {combos.map((combo, idx) => (
-                  <div key={idx} className="bg-white/60 rounded-xl p-4 flex flex-col gap-2 shadow">
+                  <div key={`${combo.growth.name}-${combo.temperature.name}-${combo.environmental.name}`} className="bg-white/60 rounded-xl p-4 flex flex-col gap-2 shadow">
                     <div className="font-semibold text-blue-700">Combo #{idx + 1}</div>
                     <div className="text-sm text-gray-700">Growth: {combo.growth.name} (x{combo.growth.multiplier})</div>
                     <div className="text-sm text-gray-700">Temperature: {combo.temperature.name} (x{combo.temperature.multiplier})</div>

@@ -8,7 +8,6 @@ import { Calculator, TrendingUp, Zap, Trophy, BookOpen, Menu, X } from 'lucide-r
 const navigationItems = [
   { href: '/', label: 'Calculator', icon: Calculator, emoji: '🌱' },
   { href: '/value-ranking', label: 'Value/lb', icon: TrendingUp, emoji: '📊' },
-  { href: '/mutation-ranking', label: 'Mutations', icon: Zap, emoji: '🧬' },
   { href: '/top-combos', label: 'Top Combos', icon: Trophy, emoji: '💡' },
   { href: '/wiki', label: 'Wiki', icon: BookOpen, emoji: '🧭' },
   { href: '/faq', label: 'FAQ', icon: BookOpen, emoji: '❓' },
