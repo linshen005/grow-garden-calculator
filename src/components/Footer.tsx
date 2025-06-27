@@ -3,8 +3,8 @@
 import type { FC } from 'react';
 
 const links = [
-  // { href: '/mutation-ranking', label: 'Mutations' }, // 已移除
   { href: '/value-ranking', label: 'Crops' },
+  { href: '/mutation-ranking', label: 'Mutations' },
   { href: '/pets', label: 'Pets' },
   { href: '/gears', label: 'Gears' },
   { href: '/eggs', label: 'Eggs' },

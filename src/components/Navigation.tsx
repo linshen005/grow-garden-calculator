@@ -8,6 +8,7 @@ import { Calculator, TrendingUp, Zap, Trophy, BookOpen, Menu, X } from 'lucide-r
 const navigationItems = [
   { href: '/', label: 'Calculator', icon: Calculator, emoji: '🌱' },
   { href: '/value-ranking', label: 'Value/lb', icon: TrendingUp, emoji: '📊' },
+  { href: '/mutation-ranking', label: 'Mutations', icon: Zap, emoji: '🧬' },
   { href: '/top-combos', label: 'Top Combos', icon: Trophy, emoji: '💡' },
   { href: '/wiki', label: 'Wiki', icon: BookOpen, emoji: '🧭' },
   { href: '/faq', label: 'FAQ', icon: BookOpen, emoji: '❓' },
@@ -50,7 +51,7 @@ export default function Navigation() {
             })}
           </div>
 
-          {/* Language Toggle */}
+          {/* Language Switch */}
           <div className="flex items-center space-x-2">
             <button className="nav-button text-sm">🇺🇸 EN</button>
             <button className="nav-button text-sm">🇨🇳 CN</button>
@@ -101,7 +102,7 @@ export default function Navigation() {
               })}
             </div>
 
-            {/* Language Toggle Mobile */}
+            {/* Language Switch */}
             <div className="flex items-center justify-center space-x-4 mt-4 pt-4 border-t border-white/20">
               <button className="nav-button text-sm px-4 py-2">🇺🇸 EN</button>
               <button className="nav-button text-sm px-4 py-2">🇨🇳 CN</button>

@@ -79,7 +79,7 @@ Final Value = 289 × 2 × 5 × 50 × 9 × 134 × 1.2 = 2,088,720
           href="https://github.com/your-repo/issues"
           target="_blank"
           rel="noopener noreferrer"
-          className="ios-button gradient-text font-bold text-lg"
+          className="ios-button text-white bg-white border-white/0 hover:bg-white active:bg-white hover:text-white active:text-white"
         >
           Submit an issue on GitHub
         </a>
